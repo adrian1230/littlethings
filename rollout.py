@@ -4,10 +4,7 @@ import sys
 # determine either the first add value is singular or plural
 # render the final list
 
-def rollOut(
-    start:'start value',
-    length:'length of array',
-    first:'only s: singular or p: plural'):
+def rollOut(start:'start value',length:'length of array',first:'only s: singular or p: plural'):
     array = [start]
     if first.lower() == 's':
         value = start
