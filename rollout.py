@@ -31,24 +31,26 @@ def rollOut(
                     else:
                         pass
     elif first.lower() == "p":
-        val = start
-        d = 0
+        value = start
+        c = 0
         while len(array) != length:
-            final = array[-1]
-            d += 1
-            val += 1
-            if d % 2 != 0:
-                if val % 2 == 0:
-                    if value > final:
-                        array.append(final+val)
+            long = len(array)
+            last = array[-1]
+            c += 1
+            while len(array) == long:
+                value += 1
+                if c % 2 != 0:
+                    if value % 2 == 0:
+                        if value > last:
+                            array.append(last+value)
+                    else:
+                        pass
                 else:
-                    pass
-            else:
-                if val % 2 == 0:
-                    pass
-                else:
-                    if value > final:
-                        array.append(final+val)
+                    if value % 2 == 0:
+                        pass
+                    else:
+                        if value > last:
+                            array.append(last+value)
     print(array)
 
 rollOut(int(sys.argv[1]),int(sys.argv[2]),sys.argv[3])
