@@ -3,7 +3,7 @@ import sys
 def rollOut(
     start:'start value',
     length:'length of array',
-    first:'only s or p'):
+    first:'only s: singular or p: plural'):
     array = [start]
     if first.lower() == 's':
         value = start
@@ -47,10 +47,6 @@ def rollOut(
                 else:
                     if value > final:
                         array.append(final+val)
-            print(array)
-        print(array)
-    else:
-        pass
     print(array)
 
 rollOut(int(sys.argv[1]),int(sys.argv[2]),sys.argv[3])
