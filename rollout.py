@@ -1,5 +1,9 @@
 import sys
 
+# give a start value and final length of the array
+# determine either the first add value is singular or plural
+# render the final list
+
 def rollOut(
     start:'start value',
     length:'length of array',
@@ -20,16 +24,10 @@ def rollOut(
                     else:
                         if value > last:
                             array.append(last+value)
-                        else:
-                            pass
                 else:
                     if value % 2 == 0:
                         if value > last:
                             array.append(last+value)
-                        else:
-                            pass
-                    else:
-                        pass
     elif first.lower() == "p":
         value = start
         c = 0
@@ -43,8 +41,6 @@ def rollOut(
                     if value % 2 == 0:
                         if value > last:
                             array.append(last+value)
-                    else:
-                        pass
                 else:
                     if value % 2 == 0:
                         pass
