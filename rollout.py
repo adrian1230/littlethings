@@ -13,27 +13,27 @@ def rollOut(
         # c = position
         # 1 4 10
         #  3 6
-        long = len(array)
-        while len(array) == long:
+        while len(array) != length:
+            long = len(array)
             last = array[-1]
-            c += 1
-            if c % 2 != 0:
-                if value % 2 == 0:
-                    pass
+            if len(array) == long:
+                c += 1
+                if c % 2 != 0:
+                    if value % 2 == 0:
+                        pass
+                    else:
+                        if value > last:
+                            array.append(last+value)
+                        else:
+                            pass
                 else:
-                    if value > last:
-                        array.append(last+value)
+                    if value % 2 == 0:
+                        if value > last:
+                            array.append(last+value)
+                        else:
+                            pass
                     else:
                         pass
-            else:
-                if value % 2 == 0:
-                    if value > last:
-                        array.append(last+value)
-                    else:
-                        pass
-                else:
-                    pass
-            print(last,c,length,value,array)
     # elif first.lower() == "p":
     #     val = start
     #     d = 0
