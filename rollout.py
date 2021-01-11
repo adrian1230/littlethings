@@ -16,8 +16,10 @@ def rollOut(
         while len(array) != length:
             long = len(array)
             last = array[-1]
-            if len(array) == long:
-                c += 1
+            # if len(array) == long:
+            c += 1
+            while len(array) == long:
+                value += 1
                 if c % 2 != 0:
                     if value % 2 == 0:
                         pass
@@ -34,6 +36,7 @@ def rollOut(
                             pass
                     else:
                         pass
+            print(c,last,long,array)
     # elif first.lower() == "p":
     #     val = start
     #     d = 0
