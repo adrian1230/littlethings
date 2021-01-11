@@ -9,32 +9,31 @@ def rollOut(
     if first.lower() == 's':
         value = start
         c = 0
+        # start and value = 1
+        # c = position
         # 1 4 10
         #  3 6
-        while len(array) != length:
+        long = len(array)
+        while len(array) == long:
             last = array[-1]
             c += 1
-            length = len(array)
-            # value += 1
-            while len(array) == length:
-                if c % 2 != 0:
-                    value += 1
-                    if value % 2 == 0:
-                        pass
-                    else:
-                        if value > last:
-                            array.append(last+value)
-                        else:
-                            pass
+            if c % 2 != 0:
+                if value % 2 == 0:
+                    pass
                 else:
-                    value += 1
-                    if value % 2 == 0:
-                        if value > last:
-                            array.append(last+value)
-                        else:
-                            pass
+                    if value > last:
+                        array.append(last+value)
                     else:
                         pass
+            else:
+                if value % 2 == 0:
+                    if value > last:
+                        array.append(last+value)
+                    else:
+                        pass
+                else:
+                    pass
+            print(last,c,length,value,array)
     # elif first.lower() == "p":
     #     val = start
     #     d = 0
