@@ -5,13 +5,13 @@ int main(){
   char hero_name[] = "Jo";
   int hero_age = 19;
   printf("this is %s and she is %d\n",hero_name,hero_age);
-  double yr_of_work_exp;
-  char final_grade;
-  printf("year of work exp: ");
-  scanf("%lf",&yr_of_work_exp);
-  printf("final grade: ");
-  scanf("%c",&final_grade);
-  printf("%f",yr_of_work_exp);
-  printf("%c",final_grade);
+  char grade[10];
+  printf("enter the final grade: ");
+  fgets(grade,10,stdin);
+  printf("grade: %s \n",grade);
+  double exp;
+  printf("yr work exp: ");
+  scanf("%lf",&exp);
+  printf("year of work experience %f \n",exp);
   return 0;
 }
