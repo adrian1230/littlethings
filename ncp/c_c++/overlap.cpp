@@ -26,6 +26,5 @@ int main()
     data.insert(data.end(),std::begin(arr),std::end(arr));
     c += 1;
   }
-  printf("%d \n",data[2]);
   return 0;
 }
