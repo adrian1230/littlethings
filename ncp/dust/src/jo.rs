@@ -38,3 +38,13 @@ pub fn joke() {
         println!("{}",k);
     }
 }
+
+pub fn haha()
+{
+	let hero = "Jo";
+	let mut age = 17;
+	println!("{1} {0}",hero,age);
+	age = 15;
+	println!("{0} {1}",age,hero);
+	println!("{0} {1}",hero,age);
+}
