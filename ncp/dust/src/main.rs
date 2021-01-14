@@ -1,3 +1,5 @@
+mod jo;
+
 fn main() {
-    println!("Hello, world!");
+   jo::joke();
 }
