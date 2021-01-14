@@ -6,15 +6,14 @@ int main()
   int n;
   scanf("%d",&n);
   int data[n];
-  while ((int) (sizeof(data)/sizeof(data[0])) != n)
+  for (int i = 0; i < n; ++i)
   {
-    int len = (int) (sizeof(data)/sizeof(data[0])); 
     int val;
     printf("give me an int: ");
     scanf("%d",&val);
-    data[len] = val;
+    data[i] = val;
   }
   printf("%d \n",(int) (sizeof(data)/sizeof(data[0])));
-  printf("%d \n",data[-1]);
+  printf("%d \n",data[n-1]);
   return 0;
 }
