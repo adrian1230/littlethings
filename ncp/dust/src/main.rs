@@ -5,4 +5,5 @@ fn main() {
    jo::joke();
    jo::haha();
    arr::list();
+   jo::ty();
 }

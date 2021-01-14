@@ -43,8 +43,23 @@ pub fn haha()
 {
 	let hero = "Jo";
 	let mut age = 17;
-	println!("{1} {0}",hero,age);
+	println!("'{1}' {1} {0}",hero,age);
 	age = 15;
 	println!("{0} {1}",age,hero);
 	println!("{0} {1}",hero,age);
+}
+
+pub fn ty()
+{
+    let x = 1;
+    let y = 2.6;
+    let j : i64 = 11;
+    println!("x i32 1 {} y i64 2.6 {} j i64 11 {}",
+             x,y,j);
+    let u: i64 = 4545445454545;
+    println!("u: i64 {}",u);
+    // Find max size
+    println!("Max i32: {}", std::i32::MAX);
+    println!("Max i64: {}", std::i32::MAX);
+    println!("Max i128: {}", std::i128::MAX);
 }
