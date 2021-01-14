@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <vector>
 #include <array>
+
 /*
 Given a 2D array arr[][] with each row of the form {l, r}, 
 the task is to find a pair (i, j) such that 
