@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <array>
+#include <iterator>
 
 using namespace std;
 
@@ -13,7 +14,7 @@ int main()
   int c = 0;
   while (c != n)
   {
-    int arr[2];
+    int arr[2]={};
     int val_1;
     printf("1st val: ");
     scanf("%d",&val_1);
@@ -25,10 +26,6 @@ int main()
     data.insert(data.end(),std::begin(arr),std::end(arr));
     c += 1;
   }
-  int len = sizeof(data) / sizeof(data[0]);
-  for (int u = 0; u < len; u++)
-  {
-    printf("%d \n",data[u]);
-  }
+  printf("%d \n",data[2]);
   return 0;
 }
