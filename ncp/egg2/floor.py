@@ -17,10 +17,14 @@ s_f = np.random.randint(1,101)
 # 9:2 20:1 18:1
 
 while egg != 0:
+    bucket = egg 
     if same == 1:
-        if s_f == (unknown + 1):
-            print("get it")
-            break
+        if bucket == egg:
+            pass
+        elif bucket == (egg - 1):
+            if s_f == (unknown + 1):
+                print("get it")
+                break
         else:
             pass
     print("current selected floor: {}".format(s_f))
