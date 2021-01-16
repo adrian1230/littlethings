@@ -11,21 +11,14 @@ egg = 2
 
 same = 0
 
-trick = 0
-
 s_f = np.random.randint(1,101)
 
 # 9:2 18:2 20:1
 # 9:2 20:1 18:1
 
 while egg != 0:
-    if s_f == unknown + 2:
-        trick += 1
     if same == 1:
         if s_f == (unknown + 1):
-            print("get it")
-            break
-        elif trick == 1:
             print("get it")
             break
         else:
