@@ -28,13 +28,12 @@ while egg != 0:
     if same == 1:
         if s_f == (unknown + 1):
             print("get it")
+            break
     c += 1
     print("c: {}".format(c))
     print("egg: {}".format(egg))
     print("---------------")
 
-print("final: ")
-print("c: {}".format(c))
 print("the limit: {}".format(unknown))
 
 # limit = 18;
