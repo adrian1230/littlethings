@@ -13,27 +13,32 @@ same = 0
 
 s_f = np.random.randint(1,101)
 
+print("1st selected floor: {}".format(s_f))
+
 while egg != 0:
-    print(s_f)
     if s_f < unknown: # 6 < 18
-        s_f = np.random.randint(s_f,101)
-        c+=1
+        s_f = np.random.randint(s_f+1,101)
         pass
     elif s_f == unknown: # 18 == 18
-        s_f = np.random.randint(s_f,101)
-        c+=1
+        s_f = np.random.randint(s_f+1,101)
         same += 1
         pass
     else: # 20 > 18
-        s_f = np.random.randint(1,s_f+1)
-        c+=1
+        s_f = np.random.randint(1,s_f)
         egg -= 1
     if same == 1:
         if s_f == (unknown + 1):
             print("get it")
+    c += 1
+    print("---------------")
+    print("c: {}".format(c))
+    print("egg: {}".format(egg))
+    print("current selected floor: {}".format(s_f))
 
-print(c)
-print(unknown)
+print("---------------")
+print("final: ")
+print("c: {}".format(c))
+print("the limit: {}".format(unknown))
 
 # limit = 18;
 # f = 13;     f = 20;
