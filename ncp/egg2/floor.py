@@ -13,9 +13,6 @@ same = 0
 
 s_f = np.random.randint(1,101)
 
-# 9:2 18:2 20:1
-# 9:2 20:1 18:1
-
 while egg != 0:
     bucket = egg 
     if same == 1:
