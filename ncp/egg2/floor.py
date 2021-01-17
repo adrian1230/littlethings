@@ -13,12 +13,11 @@ same = 0
 
 s_f = np.random.randint(1,101)
 
+minus = False
+
 while egg != 0:
-    bucket = egg 
     if same == 1:
-        if bucket == egg:
-            pass
-        elif bucket == (egg - 1):
+        if minus == True:
             if s_f == (unknown + 1):
                 print("get it")
                 break
@@ -28,11 +27,13 @@ while egg != 0:
     if s_f < unknown: # 6 < 18
         s_f = np.random.randint(s_f+1,101)
     elif s_f == unknown: # 18 == 18
-        s_f = np.random.randint(s_f+1,101)
         same += 1
+        s_f = np.random.randint(s_f+1,101)
     else: # 25 > 18
-        s_f = np.random.randint(1,s_f)
         egg -= 1
+        s_f = np.random.randint(1,s_f)
+        if same == 1:
+            minus = True
     c += 1
     print("c: {}".format(c))
     print("egg: {}".format(egg))
