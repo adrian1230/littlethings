@@ -25,6 +25,8 @@ while egg != 0:
         s_f = np.random.randint(s_f+1,101)
     elif s_f == unknown: # 18 == 18
         same += 1
+        if greater == 1:
+            break
         s_f = np.random.randint(s_f+1,101)
     else: # 25 > 18
         egg -= 1
