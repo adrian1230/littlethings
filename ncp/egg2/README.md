@@ -2,5 +2,5 @@
 
 ```bash
 May mess up itself after some rounds 
-but i do not cdare now
+but i do not care now
 ```
