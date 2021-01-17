@@ -22,7 +22,9 @@ else:
     else:
         alt = round(len(a)/3)
     print(len(a),alt)
-    b, c, d = a[:alt], a[alt:-alt], a[-alt:]
+    b = a[:alt]
+    c = a[alt:-alt]
+    d = a[-alt:]
     e, counter = 0, 0
     while e != len(b):
         chosen = b[:e+1]
