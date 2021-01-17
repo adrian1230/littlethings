@@ -21,6 +21,7 @@ else:
         alt = len(a) / 3
     else:
         alt = round(len(a)/3)
+    print(len(a),alt)
     b, c, d = a[:alt], a[alt:-alt], a[-alt:]
     e, counter = 0, 0
     while e != len(b):
