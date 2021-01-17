@@ -26,7 +26,12 @@ else:
     while e != len(b):
         chosen = b[:e+1]
         if chosen in d and chosen in c:
-            if chosen == d[-len(chosen):]:
-                if chosen == c[c.index(chosen):c.index(chosen)+len(chosen)]:
+            if chosen == d[
+                    -len(chosen):
+            ]:
+                if chosen == c[
+                        c.index(chosen):
+                        c.index(chosen)+len(chosen)
+                ]:
                     print(chosen)
         e += 1
