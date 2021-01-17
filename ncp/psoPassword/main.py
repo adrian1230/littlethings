@@ -34,4 +34,5 @@ else:
                         c.index(chosen)+len(chosen)
                 ]:
                     print(chosen)
+                    counter += 1
         e += 1
