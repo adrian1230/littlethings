@@ -17,18 +17,14 @@ if len(a) == 1 or len(a) == 2:
     print("Just a legend")
 
 else:
-    print(a)
     if len(a) % 3 == 0:
         alt = len(a) / 3
     else:
         alt = round(len(a)/3)
-    try:
-        if alt:
-            b = a[:alt]
-            c = a[alt:-alt]
-            d = a[-alt:]
-            print(b)
-            print(c)
-            print(d)
-    except:
-        pass
+    b = a[:alt]
+    c = a[alt:-alt]
+    d = a[-alt:]
+    e = 0
+    while e != len(b):
+        print(b[:e+1])
+        e += 1
