@@ -21,13 +21,11 @@ else:
         alt = len(a) / 3
     else:
         alt = round(len(a)/3)
-    b = a[:alt]
-    c = a[alt:-alt]
-    d = a[-alt:]
-    e = 0
+    b, c, d = a[:alt], a[alt:-alt], a[-alt:]
+    e, counter = 0, 0
     while e != len(b):
         chosen = b[:e+1]
         if chosen == d[-len(chosen):]:
-            print(chosen)
-            break
+            if chosen == c[c.index(chosen):c.index(chosen)+len(chosen)]:
+                print(chosen)
         e += 1
