@@ -1,0 +1,5 @@
+# password
+
+```bash
+Divide and Conquer
+```
