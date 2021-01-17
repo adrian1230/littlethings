@@ -26,5 +26,8 @@ else:
     d = a[-alt:]
     e = 0
     while e != len(b):
-        print(b[:e+1])
+        chosen = b[:e+1]
+        if chosen == d[-len(chosen):]:
+            print(chosen)
+            break
         e += 1
