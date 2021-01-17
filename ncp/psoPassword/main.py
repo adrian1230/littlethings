@@ -21,10 +21,9 @@ else:
         alt = len(a) / 3
     else:
         alt = round(len(a)/3)
-    print(len(a),alt)
-    b = a[:alt]
-    c = a[alt:-alt]
-    d = a[-alt:]
+    b = a[:int(alt)]
+    c = a[int(alt):-int(alt)]
+    d = a[-int(alt):]
     e, counter = 0, 0
     while e != len(b):
         chosen = b[:e+1]
