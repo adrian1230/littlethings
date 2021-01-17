@@ -6,5 +6,20 @@
 # memory limit: 256 mb
 # input & output: standard
 
-a = input("string without break and from len 1 to len 1000000:\n")
+import sys
 
+a = sys.argv[1]
+
+if len(a) > 1000000:
+    raise ValueError("Exceed la guy")
+
+if len(a) == 1 or len(a) == 2:
+    print("Just a legend")
+
+else:
+    if len(a) % 3 == 0:
+        alt = len(a) / 3
+    else:
+        alt = round(len(a)/3)
+
+    print(alt)
