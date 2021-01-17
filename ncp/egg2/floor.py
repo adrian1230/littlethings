@@ -40,9 +40,11 @@ while egg != 0:
                 break
         s_f = np.random.randint(1,s_f)
     c += 1
-    print("c: {}".format(c))
+    print("unknown: {}".format(same))
+    print("unknown + 1: {}".format(greater))
     print("egg: {}".format(egg))
     print("---------------")
-
+    
+print("final accumalated round: {}".format(c))
 print("the limit: {}".format(unknown))
 
