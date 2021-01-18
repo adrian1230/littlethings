@@ -8,6 +8,8 @@
 
 import sys
 
+# asdakdbasdjbasjhdas len 19
+
 a = sys.argv[1]
 
 if len(a) > 1000000:
@@ -24,6 +26,7 @@ else:
     b = a[:int(alt)]
     c = a[int(alt):-int(alt)]
     d = a[-int(alt):]
+    print(b,c,d)
     e, counter = 0, 0
     while e != len(b):
         chosen = b[:e+1]
