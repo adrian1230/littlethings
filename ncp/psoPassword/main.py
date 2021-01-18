@@ -26,7 +26,6 @@ else:
     b = a[:int(alt)]
     c = a[int(alt):-int(alt)]
     d = a[-int(alt):]
-    print(b,c,d)
     e, counter = 0, 0
     box = []
     while e != len(b):
@@ -40,6 +39,7 @@ else:
                         c.index(chosen):
                         c.index(chosen)+len(chosen)
                 ]:
+                    box.append(chosen)
                     print("yes: {}".format(chosen))
                     counter += 1
         e += 1
