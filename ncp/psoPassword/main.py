@@ -8,7 +8,7 @@
 
 import sys
 
-# asdakdbasdjbasjhdas len 19
+# asdakd basdjba sjhdas = 19
 
 a = sys.argv[1]
 
@@ -28,8 +28,10 @@ else:
     d = a[-int(alt):]
     print(b,c,d)
     e, counter = 0, 0
+    box = []
     while e != len(b):
         chosen = b[:e+1]
+        print(e,chosen)
         if chosen in d and chosen in c:
             if chosen == d[
                     -len(chosen):
@@ -38,6 +40,6 @@ else:
                         c.index(chosen):
                         c.index(chosen)+len(chosen)
                 ]:
-                    print(chosen)
+                    print("yes: {}".format(chosen))
                     counter += 1
         e += 1
