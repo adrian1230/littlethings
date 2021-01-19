@@ -11,8 +11,15 @@ a1 = np.random.randint(0,1001)
 
 a2 = a1
 
-while a1 == a2:
-    a2 = np.random.randint(0,1001)
+c = 0
+
+while c == 0:
+    while a1 == a2:
+        a2 = np.random.randint(0,1001)
+    c += 1
+    if (a1+a2) > 1000:
+        c = 0
+        a2 = a1
 
 while len(arr1) != a1:
     val = np.random.randint(-1000000,1000001)
