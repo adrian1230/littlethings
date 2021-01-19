@@ -33,7 +33,7 @@ else:
     print(b,c,d)
     while e != len(b):
         chosen = b[:e+1]
-        # print(e,chosen)
+        print(e,chosen)
         if chosen in d and chosen in c:
             if chosen == d[
                     -len(chosen):
@@ -43,13 +43,14 @@ else:
                         c.index(chosen)+len(chosen)
                 ]:
                     box.append(chosen)
-                    # print("yes: {}".format(chosen))
+                    print("yes: {}".format(chosen))
                     counter += 1
         e += 1
-    print('------------------------')
+    print(' ')
     f = 0
     while f != (len(a)-1):
-        # if a[:f+1] == a[-f+1:]:
         selected = a[:f+1]
-        print(selected,a[f+1:])
+        left = a[-(f+1):]
+        if selected == left:
+            print("yes: {}".format(selected))
         f += 1
