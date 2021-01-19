@@ -59,7 +59,14 @@ if len(pass_) >= 6 and len(pass_) <= 20:
             break
         else:
             c += 1
-    if b == -1 and c == -1:
+    d = 0
+    while d != len(pass_):
+        if pass_[d].isdigit() == True:
+            d = -1
+            break
+        else:
+            d += 1
+    if b == -1 and c == -1 and d == -1:
         pass
 else:
     pass
