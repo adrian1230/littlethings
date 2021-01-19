@@ -9,7 +9,9 @@
 import sys
 
 # asdakd basdjba sjhdas = 19
-
+#
+# as dakdbasdjbasjhdas
+# as ...das 
 a = sys.argv[1]
 
 if len(a) > 1000000:
@@ -28,6 +30,7 @@ else:
     d = a[-int(alt):]
     e, counter = 0, 0
     box = []
+    print(b,c,d)
     while e != len(b):
         chosen = b[:e+1]
         print(e,chosen)
@@ -43,3 +46,9 @@ else:
                     print("yes: {}".format(chosen))
                     counter += 1
         e += 1
+    print('--------')
+    f = 0
+    while f != (len(a)-1):
+        if a[:f+1] == a[-f+1:]:
+            print(a[:f+1])
+        f += 1
