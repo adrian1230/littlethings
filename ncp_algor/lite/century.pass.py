@@ -16,3 +16,28 @@
 
 import numpy as np
 
+a = np.random.randint(1,51)
+
+pass_ = ""
+
+alpha = "abcdefghijklmnopqrstuvwxyz"
+
+beta = "0123456789"
+
+theta = ".!"
+
+def prob(j):
+    return np.random.randint(j) / j
+
+while len(pass_) != a:
+    rand = prob(1000)
+    if rand < 33.33333333333333:
+        pass_ += alpha[np.random.randint(len(alpha))]
+    elif rand >= 33.33333333333333 and rand < 66.66666666666666:
+        pass_ += beta[np.random.randint(len(beta))]
+    elif rand >= 66.66666666666666:
+        pass_ += theta[np.random.randint(len(theta))]
+    else:
+        pass
+
+print(pass_)
