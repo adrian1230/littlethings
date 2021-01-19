@@ -48,16 +48,18 @@ if len(pass_) >= 6 and len(pass_) <= 20:
     b = 0
     while b != len(pass_):
         if pass_[b].islower() == True:
-            b = len(pass_)
+            b = -1
             break
         else:
             b += 1
     c = 0
     while c != len(pass_):
         if pass_[c].isupper() == True:
-            c = len(pass_)
+            c = -1
             break
         else:
             c += 1
+    if b == -1 and c == -1:
+        pass
 else:
     pass
