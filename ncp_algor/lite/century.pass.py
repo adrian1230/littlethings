@@ -42,20 +42,22 @@ while len(pass_) != a:
 
 print(pass_,len(pass_))
 
-while True:
-    if len(pass_) >= 6 and len(pass_) <= 20:
-        b = 0
-        while b != len(pass_):
-            if pass_.islower() == True:
-                b = len(pass_)
-            else:
-                b += 1
-            print(b)
-        c = 0
-        print(" ")
-        while c != len(pass_):
-            if pass_.isupper() == True:
-                c = len(pass_)
-            else:
-                c += 1
-            print(c)
+# aghsjd8ujh2!asd
+
+if len(pass_) >= 6 and len(pass_) <= 20:
+    b = 0
+    while b != len(pass_):
+        if pass_[b].islower() == True:
+            b = len(pass_)
+            break
+        else:
+            b += 1
+    c = 0
+    while c != len(pass_):
+        if pass_[c].isupper() == True:
+            c = len(pass_)
+            break
+        else:
+            c += 1
+else:
+    pass
