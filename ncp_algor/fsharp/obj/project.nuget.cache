@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "s1iKLo3KUM5I5krDrjHResbJxGHUJS+LFdipH+FVXJM/wdnCGeZVLRcoSMsZ49Wcr+390MG/p9867554ouN1ag==",
+  "success": true,
+  "projectFilePath": "/Users/qwe/Desktop/oult/ncp_algor/fsharp/fsharp.fsproj",
+  "expectedPackageFiles": [
+    "/Users/qwe/.nuget/packages/fsharp.core/5.0.0/fsharp.core.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
