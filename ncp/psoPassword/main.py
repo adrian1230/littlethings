@@ -1,17 +1,8 @@
-# input 1 - 1000000 long string.
-# find password met the qualify of prefix, suffix, and obelix.
-# else: "Just a legend" without quote in return.
-
 # time limit: 2 secs
 # memory limit: 256 mb
-# input & output: standard
 
 import sys
 
-# asdakd basdjba sjhdas = 19
-#
-# as dakdbasdjbasjhdas
-# as ...das 
 a = sys.argv[1]
 
 if len(a) > 1000000:
@@ -33,7 +24,6 @@ else:
     print(b,c,d)
     while e != len(b):
         chosen = b[:e+1]
-        print(e,chosen)
         if chosen in d and chosen in c:
             if chosen == d[
                     -len(chosen):
