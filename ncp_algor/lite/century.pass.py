@@ -40,7 +40,7 @@ while len(pass_) != a:
     else:
         pass
 
-print(pass_,len(pass_))
+# print(pass_,len(pass_))
 
 pass_ = "aghjH2!asdsss"
  
@@ -69,7 +69,6 @@ if len(pass_) >= 6 and len(pass_) <= 20:
     if b == -1 and c == -1 and d == -1:
         e = 0
         while e != len(pass_):
-            print(pass_[e],e)
             if e > (len(pass_) - 3):
                 pass
             else:
