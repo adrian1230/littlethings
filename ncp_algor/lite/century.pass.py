@@ -42,8 +42,8 @@ while len(pass_) != a:
 
 print(pass_,len(pass_))
 
-# aghsjd8ujh2!asd
-
+# aghsssjh2!asd
+ 
 if len(pass_) >= 6 and len(pass_) <= 20:
     b = 0
     while b != len(pass_):
