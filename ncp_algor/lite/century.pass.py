@@ -87,10 +87,12 @@ else:
     for i in range(len(pass_)):
         if pass_[i] in theta:
             theta_ += 1
-        if pass_[i] in beta:
+        elif pass_[i] in beta:
             beta_ += 1
-        if pass_[i] in alpha1:
+        elif pass_[i] in alpha1:
             alpha_1 += 1
-        if pass_[i] in alpha2:
+        elif pass_[i] in alpha2:
             alpha_2 += 1
+        else:
+            raise ValueError("not allowed to be in pass")
     print(theta_,beta_,alpha_1, alpha_2)
