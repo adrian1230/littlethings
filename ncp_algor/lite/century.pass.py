@@ -20,7 +20,9 @@ a = np.random.randint(1,51)
 
 pass_ = ""
 
-alpha = "abcdefghijklmnopqrstuvwxyz"
+alpha1 = "abcdefghijklmnopqrstuvwxyz"
+
+alpha2 = alpha1.upper()
 
 beta = "0123456789"
 
@@ -31,11 +33,13 @@ def prob(j):
 
 while len(pass_) != a:
     rand = prob(1000)
-    if rand < 33.33333333333333:
-        pass_ += alpha[np.random.randint(len(alpha))]
-    elif rand >= 33.33333333333333 and rand < 66.66666666666666:
+    if rand <= 0.25:
+        pass_ += alpha1[np.random.randint(len(alpha1))]
+    elif rand > 0.25 and rand <= 0.5:
+        pass_ += alpha2[np.random.randint(len(alpha2))]
+    elif rand > 0.5 and rand <= 0.75:
         pass_ += beta[np.random.randint(len(beta))]
-    elif rand >= 66.66666666666666:
+    elif rand > 0.75:
         pass_ += theta[np.random.randint(len(theta))]
     else:
         pass
@@ -79,12 +83,14 @@ if len(pass_) >= 6 and len(pass_) <= 20:
         if e > -1:
             print(0)
 else:
-    theta_, beta_, alpha_ = 0, 0, 0
+    theta_, beta_, alpha_1, alpha_2 = 0, 0, 0, 0
     for i in range(len(pass_)):
         if pass_[i] in theta:
             theta_ += 1
         if pass_[i] in beta:
             beta_ += 1
-        if pass_[i] in alpha:
-            alpha_ += 1
-    print(theta_,beta_,alpha_)
+        if pass_[i] in alpha1:
+            alpha_1 += 1
+        if pass_[i] in alpha2:
+            alpha_2 += 1
+    print(theta_,beta_,alpha_1, alpha_2)
