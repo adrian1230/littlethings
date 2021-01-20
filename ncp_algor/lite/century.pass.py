@@ -105,8 +105,8 @@ if check == 1:
         else:
             raise ValueError("not allowed to be in pass")
     print(theta_,beta_,alpha_1, alpha_2)
-    comb = [theta_,beta_,alpha_1,alpha_2]
-    ination = [theta,beta,alpha1,alpha2]
+    # comb = [theta_,beta_,alpha_1,alpha_2]
+    # ination = [theta,beta,alpha1,alpha2]
     # 4 8 7 5
     while len(pass_) > 20:
         buffer = 0
@@ -137,7 +137,20 @@ if check == 1:
                 else:
                     pass_ = pass_.replace(target,'',1)
                     buffer += 1
-    print(pass_,len(pass_)) 
+    while len(pass_) < 6:
+        rand = prob(1000)
+        if rand <= 0.25:
+            pass_ += alpha1[np.random.randint(len(alpha1))]
+        elif rand > 0.25 and rand <= 0.5:
+            pass_ += alpha2[np.random.randint(len(alpha2))]
+        elif rand > 0.5 and rand <= 0.75:
+            pass_ += beta[np.random.randint(len(beta))]
+        elif rand > 0.75:
+            pass_ += theta[np.random.randint(len(theta))]
+        else:
+            pass
+    print(pass_)
+
                 
 
 
