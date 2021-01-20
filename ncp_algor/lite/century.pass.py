@@ -106,6 +106,7 @@ if check == 1:
             raise ValueError("not allowed to be in pass")
     # comb = [theta_,beta_,alpha_1,alpha_2]
     # ination = [theta,beta,alpha1,alpha2]
+    print(theta_,beta_,alpha_1,alpha_2)
     counter = 0
     while len(pass_) > 20:
         buffer = 0
@@ -158,6 +159,21 @@ if check == 1:
             counter += 1
         else:
             pass
+    theta_, beta_, alpha_1, alpha_2 = 0, 0, 0, 0
+    for i in range(len(pass_)):
+        if pass_[i] in theta:
+            theta_ += 1
+        elif pass_[i] in beta:
+            beta_ += 1
+        elif pass_[i] in alpha1:
+            alpha_1 += 1
+        elif pass_[i] in alpha2:
+            alpha_2 += 1
+        else:
+            raise ValueError("not allowed to be in pass")
+    # while True:
+    #     if theta_ == 0 or beta_ == 0 or alpha_1 == 0 or alpha_2 == 0:
+    print(theta_,beta_,alpha_1,alpha_2)
     print(pass_,counter)
 
                 
