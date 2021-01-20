@@ -40,9 +40,9 @@ while len(pass_) != a:
     else:
         pass
 
-print(pass_,len(pass_))
+# print(pass_,len(pass_))
 
-# aghsssjh2!asd
+pass_ = "aghjH2!asdsss"
  
 if len(pass_) >= 6 and len(pass_) <= 20:
     b = 0
@@ -60,13 +60,27 @@ if len(pass_) >= 6 and len(pass_) <= 20:
         else:
             c += 1
     d = 0
-    while d != len(pass_):
+    while d != (len(pass_)-1):
         if pass_[d].isdigit() == True:
             d = -1
             break
         else:
             d += 1
     if b == -1 and c == -1 and d == -1:
-        pass
+        e = 0
+        # aghjH2!asdsss
+        # aghjH2!assdss
+        while e != len(pass_):
+            if e > (len(pass_) - 3):
+                pass
+            else:
+                if pass_[e] == pass_[e+1] == pass_[e+2]:
+                    pass
+                else:
+                    e = -1
+                    break
+            e += 1
+    if e == -1:
+        print(0)
 else:
     pass
