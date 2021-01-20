@@ -82,7 +82,7 @@ if len(pass_) >= 6 and len(pass_) <= 20:
                     e = -1
                     break
             e += 1
-        if e > -1:
+        if e != -1:
             print(0)
         else:
             check = 1
@@ -90,7 +90,7 @@ if len(pass_) >= 6 and len(pass_) <= 20:
         check = 1
 else:
     check = 1
-    
+
 if check = 1
     theta_, beta_, alpha_1, alpha_2 = 0, 0, 0, 0
     for i in range(len(pass_)):
