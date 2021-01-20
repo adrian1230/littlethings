@@ -106,7 +106,9 @@ if check == 1:
             raise ValueError("not allowed to be in pass")
     print(theta_,beta_,alpha_1, alpha_2)
     comb = [theta_,beta_,alpha_1,alpha_2]
+    ination = [theta,beta,alpha1,alpha2]
     # 4 8 7 5
     if (theta_+beta_+alpha_1+alpha_2) > 20 or (theta_+beta_+alpha_1+alpha_2) < 6:
         max_index = comb.index(max(comb))
-        print(max_index)
+        # print(max_index)
+        
