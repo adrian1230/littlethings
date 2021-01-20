@@ -40,9 +40,9 @@ while len(pass_) != a:
     else:
         pass
 
-# print(pass_,len(pass_))
+print(pass_,len(pass_))
 
-pass_ = "aghjH2!asdsss"
+# pass_ = "aghjH2!asdss"
  
 if len(pass_) >= 6 and len(pass_) <= 20:
     b = 0
@@ -76,7 +76,15 @@ if len(pass_) >= 6 and len(pass_) <= 20:
                     e = -1
                     break
             e += 1
-    if e > -1:
-        print(0)
+        if e > -1:
+            print(0)
 else:
-    pass
+    theta_, beta_, alpha_ = 0, 0, 0
+    for i in range(len(pass_)):
+        if pass_[i] in theta:
+            theta_ += 1
+        if pass_[i] in beta:
+            beta_ += 1
+        if pass_[i] in alpha:
+            alpha_ += 1
+    print(theta_,beta_,alpha_)
