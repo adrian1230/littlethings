@@ -172,8 +172,6 @@ if check == 1:
         else:
             raise ValueError("not allowed to be in pass")
     print(theta_,beta_,alpha_1,alpha_2)
-    # while True:
-    #     if theta_ == 0 or beta_ == 0 or alpha_1 == 0 or alpha_2 == 0:
     print(pass_,counter)
 
                 
