@@ -108,10 +108,37 @@ if check == 1:
     comb = [theta_,beta_,alpha_1,alpha_2]
     ination = [theta,beta,alpha1,alpha2]
     # 4 8 7 5
-    # if (theta_+beta_+alpha_1+alpha_2) > 20:
     while len(pass_) > 20:
-        target = pass_[np.random.randint(len(pass_))]
-        
+        buffer = 0
+        while buffer == 0:
+            location = np.random.randint(len(pass_))
+            target = pass_[location]
+            if target in theta:
+                if theta_ == 1:
+                    buffer = 0
+                else:
+                    pass_ = pass_.replace(target,'',1)
+                    buffer += 1
+            elif target in beta:
+                if beta_ == 1:
+                    buffer = 0
+                else:
+                    pass_ = pass_.replace(target,'',1)
+                    buffer += 1
+            elif target in alpha1:
+                if alpha_1 == 1:
+                    buffer = 0
+                else:
+                    pass_ = pass_.replace(target,'',1)
+                    buffer += 1
+            elif target in alpha2:
+                if alpha_2 == 1:
+                    buffer = 0
+                else:
+                    pass_ = pass_.replace(target,'',1)
+                    buffer += 1
+    print(pass_,len(pass_)) 
+                
 
 
 
