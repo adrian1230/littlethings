@@ -104,8 +104,6 @@ if check == 1:
             alpha_2 += 1
         else:
             raise ValueError("not allowed to be in pass")
-    # comb = [theta_,beta_,alpha_1,alpha_2]
-    # ination = [theta,beta,alpha1,alpha2]
     print(theta_,beta_,alpha_1,alpha_2)
     counter = 0
     while len(pass_) > 20:
@@ -171,10 +169,9 @@ if check == 1:
             alpha_2 += 1
         else:
             raise ValueError("not allowed to be in pass")
-    print(theta_,beta_,alpha_1,alpha_2)
+    comb = [theta_,beta_,alpha_1,alpha_2]
+    # if theta_ == 0:
+        
+    print(theta_,beta_,alpha_1,alpha_2)    
     print(pass_,counter)
-
-                
-
-
-
+    
