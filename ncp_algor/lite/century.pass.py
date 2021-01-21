@@ -171,6 +171,8 @@ if check == 1:
             raise ValueError("not allowed to be in pass")
     comb = [theta_,beta_,alpha_1,alpha_2]
     ination = [theta,beta,alpha1,alpha2]
+    print(theta_,beta_,alpha_1,alpha_2) 
+    print(pass_,len(pass_),counter)
     if theta_ == 0:
         max_ = max(comb)
         position = [
@@ -224,5 +226,5 @@ if check == 1:
         max_ -= 1
         counter += 1
     print(theta_,beta_,alpha_1,alpha_2)    
-    print(pass_,counter)
+    print(pass_,len(pass_),counter)
     
