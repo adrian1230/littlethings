@@ -173,8 +173,16 @@ if check == 1:
     ination = [theta,beta,alpha1,alpha2]
     if theta_ == 0:
         max_ = max(comb)
-        position = [i for i in range(len(pass_)) if pass_[i] in ination[max_]]
-        pass_ = pass_.replace(pass_[position[np.random.randint(len(position))]],ination[max_][np.random.randint(len(ination[max_]))],1)
+        position = [
+            i for i in range(len(pass_)) 
+            if pass_[i] in ination[max_]
+            ]
+        pass_ = pass_.replace(
+            pass_[position[np.random.randint(len(position))]],
+            ination[max_][np.random.randint(len(ination[max_]))],
+            1)
+        theta_ += 1
+        max_ -= 1
     print(theta_,beta_,alpha_1,alpha_2)    
     print(pass_,counter)
     
