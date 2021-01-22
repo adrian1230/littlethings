@@ -116,6 +116,7 @@ if check == 1:
                     buffer = 0
                 else:
                     pass_ = pass_.replace(target,'',1)
+                    theta_ -= 1
                     counter += 1
                     buffer += 1
             elif target in beta:
@@ -123,6 +124,7 @@ if check == 1:
                     buffer = 0
                 else:
                     pass_ = pass_.replace(target,'',1)
+                    beta_ -= 1
                     counter += 1
                     buffer += 1
             elif target in alpha1:
@@ -130,6 +132,7 @@ if check == 1:
                     buffer = 0
                 else:
                     pass_ = pass_.replace(target,'',1)
+                    alpha_1 -= 1
                     counter += 1
                     buffer += 1
             elif target in alpha2:
@@ -137,6 +140,7 @@ if check == 1:
                     buffer = 0
                 else:
                     pass_ = pass_.replace(target,'',1)
+                    alpha_2 -= 1
                     counter += 1
                     buffer += 1
             else:
@@ -145,30 +149,22 @@ if check == 1:
         rand = prob(1000)
         if rand <= 0.25:
             pass_ += alpha1[np.random.randint(len(alpha1))]
+            alpha_1 += 1
             counter += 1
         elif rand > 0.25 and rand <= 0.5:
             pass_ += alpha2[np.random.randint(len(alpha2))]
+            alpha_2 += 1
             counter += 1
         elif rand > 0.5 and rand <= 0.75:
             pass_ += beta[np.random.randint(len(beta))]
+            beta_ += 1
             counter += 1
         elif rand > 0.75:
             pass_ += theta[np.random.randint(len(theta))]
+            theta_ += 1
             counter += 1
         else:
             pass
-    theta_, beta_, alpha_1, alpha_2 = 0, 0, 0, 0
-    for i in range(len(pass_)):
-        if pass_[i] in theta:
-            theta_ += 1
-        elif pass_[i] in beta:
-            beta_ += 1
-        elif pass_[i] in alpha1:
-            alpha_1 += 1
-        elif pass_[i] in alpha2:
-            alpha_2 += 1
-        else:
-            raise ValueError("not allowed to be in pass")
     comb = [theta_,beta_,alpha_1,alpha_2]
     ination = [theta,beta,alpha1,alpha2]
     print(theta_,beta_,alpha_1,alpha_2) 
