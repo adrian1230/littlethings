@@ -186,11 +186,11 @@ if check == 1:
         max_index = comb.index(max(comb))
         position = [
             i for i in range(len(pass_)) 
-            if pass_[i] in ination[max_]
+            if pass_[i] in ination[max_index]
             ]
         pass_ = pass_.replace(
             pass_[position[np.random.randint(len(position))]],
-            ination[max_][np.random.randint(len(ination[max_]))],
+            beta[np.random.randint(len(beta))],
             1)
         beta_ += 1
         counter += 1
@@ -199,11 +199,11 @@ if check == 1:
         max_index = comb.index(max(comb))
         position = [
             i for i in range(len(pass_)) 
-            if pass_[i] in ination[max_]
+            if pass_[i] in ination[max_index]
             ]
         pass_ = pass_.replace(
             pass_[position[np.random.randint(len(position))]],
-            ination[max_][np.random.randint(len(ination[max_]))],
+            alpha1[np.random.randint(len(alpha1))],
             1)
         alpha_1 += 1
         counter += 1
@@ -212,11 +212,11 @@ if check == 1:
         max_index = comb.index(max(comb))
         position = [
             i for i in range(len(pass_)) 
-            if pass_[i] in ination[max_]
+            if pass_[i] in ination[max_index]
             ]
         pass_ = pass_.replace(
             pass_[position[np.random.randint(len(position))]],
-            ination[max_][np.random.randint(len(ination[max_]))],
+            alpha2[np.random.randint(len(alpha2))],
             1)
         alpha_2 += 1
         counter += 1
