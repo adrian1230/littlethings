@@ -116,29 +116,29 @@ if check == 1:
                     buffer = 0
                 else:
                     pass_ = pass_.replace(target,'',1)
-                    buffer += 1
                     counter += 1
+                    buffer += 1
             elif target in beta:
                 if beta_ == 1:
                     buffer = 0
                 else:
                     pass_ = pass_.replace(target,'',1)
-                    buffer += 1
                     counter += 1
+                    buffer += 1
             elif target in alpha1:
                 if alpha_1 == 1:
                     buffer = 0
                 else:
                     pass_ = pass_.replace(target,'',1)
-                    buffer += 1
                     counter += 1
+                    buffer += 1
             elif target in alpha2:
                 if alpha_2 == 1:
                     buffer = 0
                 else:
                     pass_ = pass_.replace(target,'',1)
-                    buffer += 1
                     counter += 1
+                    buffer += 1
             else:
                 pass
     while len(pass_) < 6:
@@ -172,7 +172,7 @@ if check == 1:
     comb = [theta_,beta_,alpha_1,alpha_2]
     ination = [theta,beta,alpha1,alpha2]
     print(theta_,beta_,alpha_1,alpha_2) 
-    print(pass_,len(pass_),counter)
+    print(pass_,len(pass_))
     if theta_ == 0:
         max_ = max(comb)
         position = [
@@ -238,5 +238,5 @@ if check == 1:
         else:
             raise ValueError("not allowed to be in pass")
     print(theta_,beta_,alpha_1,alpha_2)    
-    print(pass_,len(pass_),counter)
-    
+    print(pass_,len(pass_))
+    print(counter)
