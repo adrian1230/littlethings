@@ -181,6 +181,12 @@ if check == 1:
             1)
         theta_ += 1
         counter += 1
+        if ination[max_index] == beta:
+            beta_ -= 1
+        elif ination[max_index] == alpha1:
+            alpha_1 -= 1
+        else:
+            alpha_2 -= 1
     if beta_ == 0:
         max_index = comb.index(max(comb))
         position = [
@@ -193,6 +199,12 @@ if check == 1:
             1)
         beta_ += 1
         counter += 1
+        if ination[max_index] == theta:
+            theta_ -= 1
+        elif ination[max_index] == alpha1:
+            alpha_1 -= 1
+        else:
+            alpha_2 -= 1
     if alpha_1 == 0:
         max_index = comb.index(max(comb))
         position = [
@@ -205,6 +217,12 @@ if check == 1:
             1)
         alpha_1 += 1
         counter += 1
+        if ination[max_index] == beta:
+            beta_ -= 1
+        elif ination[max_index] == theta:
+            theta_ -= 1
+        else:
+            alpha_2 -= 1
     if alpha_2 == 0:
         max_index = comb.index(max(comb))
         position = [
@@ -217,6 +235,12 @@ if check == 1:
             1)
         alpha_2 += 1
         counter += 1
+        if ination[max_index] == beta:
+            beta_ -= 1
+        elif ination[max_index] == theta:
+            theta_ -= 1
+        else:
+            alpha_1 -= 1
     print(theta_,beta_,alpha_1,alpha_2)    
     print(pass_,len(pass_))
     print(counter)
