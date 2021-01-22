@@ -46,7 +46,7 @@ while len(pass_) != a:
 
 print(pass_,len(pass_))
 
-# pass_ = "aghjH2!asdss"
+print("\nChecking...\n\nResult:")
 
 check = 0
  
@@ -83,7 +83,7 @@ if len(pass_) >= 6 and len(pass_) <= 20:
                     break
             e += 1
         if e != -1:
-            print(0)
+            print("0, already strong - no change needed")
         else:
             check = 1
     else:
@@ -104,7 +104,6 @@ if check == 1:
             alpha_2 += 1
         else:
             raise ValueError("not allowed to be in pass")
-    print(theta_,beta_,alpha_1,alpha_2)
     counter = 0
     while len(pass_) > 20:
         buffer = 0
@@ -167,8 +166,6 @@ if check == 1:
             pass
     comb = [theta_,beta_,alpha_1,alpha_2]
     ination = [theta,beta,alpha1,alpha2]
-    print(theta_,beta_,alpha_1,alpha_2) 
-    print(pass_,len(pass_))
     if theta_ == 0:
         max_index = comb.index(max(comb))
         position = [
@@ -241,6 +238,7 @@ if check == 1:
             theta_ -= 1
         else:
             alpha_1 -= 1
-    print(theta_,beta_,alpha_1,alpha_2)    
     print(pass_,len(pass_))
-    print(counter)
+    print("# theta: {}, # beta: {}, # alpha 1: {}, # alpha 2: {}".format(
+        theta_,beta_,alpha_1,alpha_2))
+    print("# steps to become Strong: {}".format(counter))
