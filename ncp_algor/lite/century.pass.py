@@ -170,20 +170,20 @@ if check == 1:
     print(theta_,beta_,alpha_1,alpha_2) 
     print(pass_,len(pass_))
     if theta_ == 0:
-        max_ = max(comb)
+        max_index = comb.index(max(comb))
         position = [
             i for i in range(len(pass_)) 
-            if pass_[i] in ination[max_]
+            if pass_[i] in ination[max_index]
             ]
         pass_ = pass_.replace(
             pass_[position[np.random.randint(len(position))]],
-            ination[max_][np.random.randint(len(ination[max_]))],
+            ination[max_index][np.random.randint(len(ination[max_index]))],
             1)
         theta_ += 1
-        max_ -= 1
-        # counter += 1
+        counter += 1
+        max(comb) -= 1
     if beta_ == 0:
-        max_ = max(comb)
+        max_index = comb.index(max(comb))
         position = [
             i for i in range(len(pass_)) 
             if pass_[i] in ination[max_]
@@ -193,10 +193,9 @@ if check == 1:
             ination[max_][np.random.randint(len(ination[max_]))],
             1)
         beta_ += 1
-        max_ -= 1
-        # counter += 1
+        counter += 1
     if alpha_1 == 0:
-        max_ = max(comb)
+        max_index = comb.index(max(comb))
         position = [
             i for i in range(len(pass_)) 
             if pass_[i] in ination[max_]
@@ -206,10 +205,9 @@ if check == 1:
             ination[max_][np.random.randint(len(ination[max_]))],
             1)
         alpha_1 += 1
-        max_ -= 1
-        # counter += 1
+        counter += 1
     if alpha_2 == 0:
-        max_ = max(comb)
+        max_index = comb.index(max(comb))
         position = [
             i for i in range(len(pass_)) 
             if pass_[i] in ination[max_]
@@ -219,8 +217,7 @@ if check == 1:
             ination[max_][np.random.randint(len(ination[max_]))],
             1)
         alpha_2 += 1
-        max_ -= 1
-        # counter += 1
+        counter += 1
     print(theta_,beta_,alpha_1,alpha_2)    
     print(pass_,len(pass_))
     print(counter)
