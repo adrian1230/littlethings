@@ -221,18 +221,6 @@ if check == 1:
         alpha_2 += 1
         max_ -= 1
         # counter += 1
-    theta_, beta_, alpha_1, alpha_2 = 0, 0, 0, 0
-    for i in range(len(pass_)):
-        if pass_[i] in theta:
-            theta_ += 1
-        elif pass_[i] in beta:
-            beta_ += 1
-        elif pass_[i] in alpha1:
-            alpha_1 += 1
-        elif pass_[i] in alpha2:
-            alpha_2 += 1
-        else:
-            raise ValueError("not allowed to be in pass")
     print(theta_,beta_,alpha_1,alpha_2)    
     print(pass_,len(pass_))
     print(counter)
