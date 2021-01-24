@@ -12,7 +12,8 @@ let con which =
 
 let devour = 
     let jo = @"<room number=""1001"">"
-    sprintf "%s" jo
+    let oj = """<id number="1092">"""
+    sprintf "%s %s" jo oj
 
 [<EntryPoint>]
 let main argv =
@@ -24,4 +25,7 @@ let main argv =
     let txt1 = 5.18
     printfn "%d %f" txt txt1
     printfn "%s" devour
+    printfn "The\n\
+            One\n\
+            and only"
     0 // return an integer exit code
