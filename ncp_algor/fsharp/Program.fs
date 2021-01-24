@@ -10,6 +10,10 @@ let from whom =
 let con which = 
     sprintf "%s" which
 
+let devour = 
+    let jo = @"<room number=""1001"">"
+    sprintf "%s" jo
+
 [<EntryPoint>]
 let main argv =
     let result = 1 + 2
@@ -19,4 +23,5 @@ let main argv =
     let txt = 5
     let txt1 = 5.18
     printfn "%d %f" txt txt1
+    printfn "%s" devour
     0 // return an integer exit code
