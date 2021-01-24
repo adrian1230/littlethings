@@ -7,9 +7,16 @@ open System
 let from whom =
     sprintf "from %s" whom
 
+let con which = 
+    sprintf "%s" which
+
 [<EntryPoint>]
 let main argv =
     let result = 1 + 2
+    let msg = con "Babe"
     let message = from "F#" // Call the function
-    printfn "Hello world %s %d" message result
+    printfn "Hello world %s %d %s" message result msg
+    let txt = 5
+    let txt1 = 5.18
+    printfn "%d %f" txt txt1
     0 // return an integer exit code
