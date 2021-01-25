@@ -1,6 +1,6 @@
 use rand::Rng;
 
-pub fn generate()
+pub fn generate(mut v:Vec<i32>)
 {
     // let mut random = rand::thread_rng();
     // let n1: u8 = random.gen();
@@ -8,7 +8,6 @@ pub fn generate()
     // println!("{}",n1);
     // println!("{}",n2);
     // println!("{}",random.gen::<u32>());
-    let mut v: Vec<i32> = Vec::new();
     while v.len() != 5 {
         let val = rand::thread_rng(
         ).gen_range(1..10);

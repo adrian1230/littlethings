@@ -9,5 +9,6 @@
 mod array;
 
 fn main() {
-    array::generate();
+    let v: Vec<i32> = Vec::new();
+    array::generate(v);
 }
