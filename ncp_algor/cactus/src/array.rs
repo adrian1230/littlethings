@@ -11,7 +11,7 @@ pub fn generate()
     let mut v: Vec<i32> = Vec::new();
     while v.len() != 5 {
         let val = rand::thread_rng(
-        ).gen_range(0..10);
+        ).gen_range(1..10);
         v.push(val);
     }
     // println!("");
