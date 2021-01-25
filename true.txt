@@ -3,7 +3,8 @@ Randomness or Probability is the result of the limited elements that we can acce
 Statistics is subjective. Even using all the data of the entire population, 
 data cleaning and assumptions can turn the conclusions less objective.
 
-Correlation does not imply causation.
+Correlation is drawn, whenever a positive or negative tendency is created. 
+Correlation does not imply causation. 
 
 Faith and understanding can be two opposite locations. You did not analyse
 and create theories in science and humanities; but, you chose to believe in
@@ -22,10 +23,10 @@ good quality.
 
 Abundance does not reflect profoundness.
 
-Mathematical models and predictions match, precisely or approximatively,
-to the experimentation does not imply the existence of the predicted 
-objects. Misinterpretation is allowed to exist in the human brains and
-conclusions.
+Math models and predictions match, precisely or approximatively,
+to the experiments does not imply the existence of the predicted 
+objects. human minds / brains are capable of creating 
+misinterpreted or wrong conclusions.
 
 The naming of terms or established facts can be coined based on opinions
 but may not be of actuality and reality. 
@@ -100,11 +101,6 @@ author or the original point of view, then you have to be careful.
 
 Skepticism requires evidence and critical reasoning, otherwise. 
 it means nothing for you, even it is right.
-
-Correlation is drawn, if the size of one's penis does not have any influence on one's
-salary, generally or at large, the the correlation still can be drawn. Whenever a 
-positive or negative tendency is created, then you have correlation, like the penis
-research.
 
 Less development, less consumption, less energy problems.
 
