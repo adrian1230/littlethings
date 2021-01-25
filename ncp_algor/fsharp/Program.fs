@@ -15,6 +15,9 @@ let devour =
     let oj = """<id number="1092">"""
     sprintf "%s %s" jo oj
 
+let negate x = x * -1
+let plus x = x + x
+
 [<EntryPoint>]
 let main argv =
     let result = 1 + 2
@@ -28,4 +31,10 @@ let main argv =
     printfn "The\n\
             One\n\
             and only"
+    // val a : byte = 86uy
+    // val b : int = 86
+    // val c : int64 = 86L
+    let a,b,c = 86uy, 86, 86L
+    printfn "%d %d %d" a b c
+    printfn "%d" (negate (plus 5))
     0 // return an integer exit code
