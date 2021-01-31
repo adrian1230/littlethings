@@ -11,4 +11,6 @@ parallel edges and loops are prohibited
 if no cactus => -1
 else:
   output a set of edge-distinct paths
+
+each path should start with ki and ki => 2
 ```
