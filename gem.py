@@ -100,7 +100,7 @@ def get(num,length,per,cent):
                 else:
                     pass
                 
-get(100,15,10000,1000)
+get(100,43,10000,1000)
 
 print(data[np.random.randint(len(data))])
                 
