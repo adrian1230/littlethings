@@ -4,8 +4,5 @@ non-competitive programming
 not-timed
 
 ```bash
-F#
-ReasonML
-Python
-Javascript
+the page, txt, and pdf files' content is my creation and mine alone.
 ```
